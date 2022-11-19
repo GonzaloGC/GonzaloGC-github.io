@@ -1,4 +1,4 @@
-const burger = document.querySelector("nav svg");
+/* const burger = document.querySelector("nav svg");
 
 burger.addEventListener("click", () => {
   if (burger.classList.contains("active")) {
@@ -17,4 +17,4 @@ burger.addEventListener("click", () => {
     gsap.set("body", { overflow: "hidden" });
   }
   burger.classList.toggle("active");
-});
+}); */
