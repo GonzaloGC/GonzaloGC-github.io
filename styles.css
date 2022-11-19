@@ -12,6 +12,7 @@ html{
 :root{
     --main-color: #f8b281;
     --secondary-color: #1b1b1b;
+    --whatsapp-color: #25D366
 }
 @font-face {
   font-family: "argonite";
@@ -21,36 +22,36 @@ section{
     padding: 5%;
 }
 h1{
-    font-size: 3rem;
-    line-height: 125%;
-    padding: 1rem 0rem;
+  font-size: 3rem;
+  line-height: 125%;
+  padding: 1rem 0rem;
 }
 h3 {
-    font-size: 1.25rem;
-    line-height: 125%;
+  font-size: 1.25rem;
+  line-height: 125%;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 nav svg {
-    cursor: pointer;
-    z-index: 10;
+  cursor: pointer;
+  z-index: 10;
 }
 .links {
-position: absolute;
-background: white;
-width: 100%;
-height: 100vh;
-left: 0;
-top: 0;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-evenly;
-transform: translateX(100%);
+  position: absolute;
+  background: white;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transform: translateX(100%);
 }
 .links a {
   color: var(--secondary-color);
@@ -125,6 +126,10 @@ transform: translateX(100%);
   color: var(--secondary-color);
   text-align: center;
   font-family: "argonite", sans-serif;
+  padding-top: 3rem;
+}
+.classes-description h2, h3{
+  padding-top: 2rem;
 }
 
 .images{
@@ -178,64 +183,58 @@ transform: translateX(100%);
   line-height: 150%;
   font-size: 1.2rem;
 }
-.about img {
+.img-about {
   width: 100%;
   margin-top: 2rem;
   border-radius: 1rem;
+  padding-top: 6rem;
 }
-.our-story a img{
-  width: 5%;
-}
-.button2 {
-  font-family: inherit;
-  background: #25D366;
-  color: white;
-  padding: 0.35em 0;
-  font-size: 17px;
-  border: none;
-  border-radius: 0.7em;
-  letter-spacing: 0.08em;
-  position: relative;
+/* .our-story {
   display: flex;
-  align-content: center;
   align-items: center;
-  overflow: hidden;
-  height: 2.1em;
-  padding-left: 2.8em;
-  padding-right: 0.9em;
- }
- 
- .button2 .icon {
-  background: #fff;
-  height: 2em;
-  width: 2em;
-  border-radius: 2em;
+  justify-content: space-evenly;
+} */
+.our-story{
+  align-items: center;
+  align-content: center;
+}
+.our-story a{
+  padding: 0.7rem;
+  font-family: "Poppins", sans-serif;;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.216);
+  margin-top: 2.5rem;
+  padding-right: 4rem;
+  padding-left: 1.5rem;
   position: absolute;
   display: flex;
+  flex-direction: row;
+  gap: 1rem;
   align-items: center;
-  justify-content: center;
-  left: 0.4em;
-  transition: all 0.5s;
- }
- 
- .icon img {
-  margin-left: 0.1em;
-  transition: all 0.5s;
-  color: #25D366;
-  width: 10rem;
-  height: 10rem;
-  padding-bottom: 30px;
- }
- 
- .button2:hover .icon img {
-  transform: rotate(0deg);
- }
- 
- .button2:hover .icon {
-  width: calc(100% - 0.85rem);
-  border-radius: 0.1em;
- }
- .footer a img{
+  align-content: center;
+  margin-inline: 15%;
+  /* margin-left: 25%; */
+  
+  /* justify-content: space-around; */
+}
+.our-story a img{
+  /* position: absolute;
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+  justify-content: space-between; */
+  width: 1.5rem;
+  /* padding-top: -20px; */
+  margin: 0 auto;
+}
+.our-story p{
+  padding-top: 2rem;
+  text-align: center;
+}
+
+ .footer img{
   display: block;
   margin: auto;
   width: 10%;
@@ -259,6 +258,7 @@ transform: translateX(100%);
     flex-direction: row;
     gap: 2rem;
   }
+
   .classes-description h3{
     padding-bottom: 2.5rem;
   }
@@ -277,6 +277,17 @@ transform: translateX(100%);
   .about img{
     border-radius: 1rem;
   }
+  .our-story a{
+    /* align-items: center; */
+    margin: auto;
+    margin-top: 3rem;
+    padding-right: 4rem;
+    padding-left: 1.5rem;
+  }
+  .our-story p{
+    padding-top: 2rem;
+  }
+  
   
   .footer a img{
     display: block;
