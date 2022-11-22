@@ -31,15 +31,6 @@ h3 {
   line-height: 125%;
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-nav svg {
-  cursor: pointer;
-  z-index: 10;
-}
 .links {
   position: absolute;
   background: white;
@@ -68,6 +59,8 @@ nav svg {
   font-size: 1rem;
   font-family: "argonite", sans-serif;
   color: #000;
+  text-shadow: 2px 4px 3px rgba(243,246,244,0.1);
+  
 }
 
 .logo img {
@@ -140,6 +133,7 @@ nav svg {
   width: 100%;
   border-radius: 1rem;
   margin-top: 1rem;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.216)
 }
 .meditation,
 .yoga,
@@ -172,6 +166,55 @@ nav svg {
   bottom: 65px;
 }
 
+.horario{
+  /* width: auto; */
+  /* display: grid; */
+  /* flex-direction: column; */
+  /* grid-template-rows: repeat(3, 1fr); */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.horario-description h2{
+  font-family: "argonite";
+}
+.items h3{
+  padding: 0;
+}
+.items{
+  display: grid;
+  /* grid-template-rows: repeat(3, 1fr); */
+  grid-template-rows: 10% repeat(2, 1fr);
+  row-gap: 1.5rem;
+}
+
+.primer-horario{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  border: solid #f8b281;
+  border-radius: 1rem;
+  border-width: .1rem;
+}
+.items img{
+  padding-bottom: 0.5rem;
+}
+.items h3{
+  padding-bottom: 0.5rem;
+}
+.segundo-horario{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  border: solid #f8b281;
+  border-radius: 1rem;
+  border-width: .1rem;
+}
+
 .about {
   color: var(--secondary-color);
 }
@@ -188,6 +231,9 @@ nav svg {
   margin-top: 2rem;
   border-radius: 1rem;
   padding-top: 6rem;
+}
+.about img{
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.216)
 }
 /* .our-story {
   display: flex;
@@ -250,8 +296,30 @@ nav svg {
   body {
     padding: 0% 10%;
   }
+  section{
+    padding: 3.5%;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav svg {
+    cursor: pointer;
+    z-index: 10;
+  }
+  /* section{
+    padding: 0;
+  } */
+
   .logo img{
     padding-left: 1.5rem;
+  }
+  .selling-point h3{
+    padding: 0;
+  }
+  .ctas{
+    padding-top: 1.5rem;
   }
   .images {
     display: flex;
@@ -262,21 +330,66 @@ nav svg {
   .classes-description h3{
     padding-bottom: 2.5rem;
   }
+  .horario-description{
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .titulo{
+    grid-column: 5/8;
+    text-align: center;
+  }
+  /* .primer-horario h3{
+    padding: 0;
+  } */
+  .primer-horario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .segundo-horario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .mar{
+    border-style: solid;
+    border-color: #f8b281;
+    border-radius: 1rem;
+    border-width: 0.1rem;
+    grid-column: 3/6;
+    grid-row: 2/4;
+    height: 10rem;
+  }
+  .jue{
+    border-style: solid;
+    border-color: #f8b281;
+    border-radius: 1rem;
+    border-width: 0.1rem;
+    grid-column: 7/10;
+    grid-row: 2/4;
+    height: 10rem;
+  }
+
   .about {
     display: flex;
     gap: 5rem;
     justify-content: space-between;
   }
   .about img {
+    padding-top: 0;
+    margin-top: 0;
     width: 40%;
   }
   .about h2 {
     text-align: start;
   }
-  
-  .about img{
-    border-radius: 1rem;
+  .about p{
+    text-align: start;
   }
+
   .our-story a{
     /* align-items: center; */
     margin: auto;
@@ -288,12 +401,11 @@ nav svg {
     padding-top: 2rem;
   }
   
-  
   .footer a img{
-    display: block;
+    display: flex;
     margin: auto;
     width: 8%;
-    padding-bottom: 1%;
+    padding: 0;
    }
 }
   
