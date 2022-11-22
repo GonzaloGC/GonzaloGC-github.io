@@ -253,6 +253,12 @@ nav svg {
   .logo img{
     padding-left: 1.5rem;
   }
+  .selling-point h3{
+    padding: 0;
+  }
+  .ctas{
+    padding-top: 1.5rem;
+  }
   .images {
     display: flex;
     flex-direction: row;
@@ -268,15 +274,17 @@ nav svg {
     justify-content: space-between;
   }
   .about img {
+    padding-top: 0;
+    margin-top: 0;
     width: 40%;
   }
   .about h2 {
     text-align: start;
   }
-  
-  .about img{
-    border-radius: 1rem;
+  .about p{
+    text-align: start;
   }
+
   .our-story a{
     /* align-items: center; */
     margin: auto;
@@ -287,7 +295,6 @@ nav svg {
   .our-story p{
     padding-top: 2rem;
   }
-  
   
   .footer a img{
     display: block;
