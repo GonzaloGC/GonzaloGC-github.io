@@ -433,5 +433,8 @@ h3 {
     width: 4rem;
     padding: 0;
    }
+   .footer h1{
+    font-size: small;
+   }
 }
   
