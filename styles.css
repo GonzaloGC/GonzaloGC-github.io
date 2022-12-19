@@ -374,16 +374,31 @@ h3 {
 
   .about {
     /* height: 100vh; */
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr); */
     /* row-gap: 50px;
     column-gap: 50px; */
     /* padding: 0; */
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .about__description{
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
   }
   .our-story{
-    /* display: flex;
-    justify-content: flex-start; */
+    margin-top: 100px;
+  }
+  .our-story p{
+    margin: 0 100px;
+  }
+  .button-whatsapp a:hover{
+    background-color: hsl(25, 89%, 70%);
+  }
+  /* .our-story{
     grid-column: 1/5;
     grid-row: 1/3;
     height: 5rem;
@@ -392,7 +407,6 @@ h3 {
   .button-whatsapp{
     grid-column: 2/4;
     grid-row: 4/5;
-    /* display: flex; */
     margin: 0;
     height: 5rem;
   }
@@ -400,7 +414,7 @@ h3 {
     grid-column: 6/9;
     grid-row: 1/7;
     height: 5rem;
-  }
+  } */
   .imagen-contact img {
     /* padding-top: 0;
     margin-top: 0; */
@@ -411,7 +425,7 @@ h3 {
     background-size: cover;
     /* width: 40%;
     height: 60%; */
-  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.216)
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.216)
   }
   .our-story h2{
     text-align: left;
