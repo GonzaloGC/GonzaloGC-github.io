@@ -19,7 +19,7 @@ html{
   src: url("./src/stone\ orgonite.woff");
 }
 section{
-    padding: 5%;
+    /* padding: 5%; */
 }
 h1{
   font-size: 3rem;
@@ -31,10 +31,10 @@ h3 {
   line-height: 125%;
 }
 
-.front-page {
+/* .front-page {
   min-height: 100vh;
   color: white;
-}
+} */
 /* .links {
   position: absolute;
   background: white;
@@ -59,15 +59,27 @@ h3 {
 }
 .logo h1 {
   margin-left: 0.5rem;
+  letter-spacing: 2px;
   font-size: 1rem;
   font-family: "argonite", sans-serif;
-  color: #000;
+  color: #fff;
   text-shadow: 2px 4px 3px rgba(243,246,244,0.1);
 }
 
 .logo img {
   width: 6rem;
-  padding-left: 1.5rem;
+  /* padding-left: 5rem; */
+  margin-left: 10px;
+}
+
+.front-page{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../src/heroMin.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  color: white;
 }
 
 .selling-point {
