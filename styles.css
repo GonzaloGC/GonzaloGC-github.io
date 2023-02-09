@@ -18,9 +18,7 @@ html{
   font-family: "argonite";
   src: url("./src/stone\ orgonite.woff");
 }
-section{
-    /* padding: 5%; */
-}
+
 h1{
   font-size: 3rem;
   line-height: 125%;
@@ -54,7 +52,9 @@ h3 {
 }
 
 .logo {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
 }
 .logo h1 {
@@ -69,7 +69,7 @@ h3 {
 .logo img {
   width: 6rem;
   /* padding-left: 5rem; */
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 
 .front-page{
@@ -80,6 +80,8 @@ h3 {
   height: 100vh;
   width: 100%;
   color: white;
+  padding: 0;
+  margin: 0;
 }
 
 .selling-point {
@@ -303,10 +305,16 @@ h3 {
 }
 
 
-@media screen and (min-width: 768px) {
-  body {
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+  /* body {
     padding: 0% 10%;
-  }
+  } */
   section{
     padding: 3.5%;
   }
@@ -323,9 +331,11 @@ h3 {
     padding: 0;
   } */
 
-  .logo img{
-    padding-left: 1.5rem;
-  }
+  .logo{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 0 50px;
+   }
   .selling-point h3{
     padding: 0;
   }
